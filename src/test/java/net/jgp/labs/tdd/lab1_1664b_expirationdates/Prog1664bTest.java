@@ -21,7 +21,7 @@ public class Prog1664bTest {
 	}
 
 	@Test
-	public void testProcess() {
+	public void testProcess0() {
 		Prog1664b app = new Prog1664b();
 		for (int i = 71; i < 96; i++) {
 			String toTest = "1/1/" + i;
@@ -31,4 +31,21 @@ public class Prog1664bTest {
 		}
 	}
 
+	@Test
+	public void testProcess1() {
+		Prog1664b app = new Prog1664b();
+		int dm[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+		for (int m = 1; m < 13; m++) {
+			for (int d = 1; d <= dm[m-1]; d++) {
+				for (int y = 71; y <= 96; y++) {
+					String toTest = m + "/" + d + "/" + y;
+					String res = m + "/" + d + "/19" + y;
+					System.out.print("Testing: " + toTest);
+					String coded = app.encode(toTest);
+					System.out.println(" code: " + coded);
+					assertEquals("ok", app.decode(coded), res);
+				}
+			}
+		}
+	}
 }

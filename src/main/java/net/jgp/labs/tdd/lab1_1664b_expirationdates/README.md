@@ -1,6 +1,6 @@
 # Program 1664b - Expiration dates
 
-**Program Description**:  Product expiration dates are often encoded to discourage consumers from complaining.  A common technique is to use letters instead of numbers to represent the dates.  Suppose that the _Really Slick Dairy Company_ encodes the months as the letters 'A' through 'L', each digit of the day's date as the letters 'Q' through 'Z' and the year as the letters 'Z" through 'A' plus 1970, where 'Z' represents 1, and 'A' is 26.  Days that would otherwise have only one digit are preceded by a zero.  Write a program that codes and/or decodes an expiration date.  A menu should contain three options for the user: 1) Code 2) Decode 3) Quit.
+**Program Description**:  Product expiration dates are often encoded to discourage consumers from complaining.  A common technique is to use letters instead of numbers to represent the dates.  Suppose that the _Really Slick Dairy Company_ encodes the months as the letters 'A' through 'L', each digit of the day's date as the letters 'Q' through 'Z' and the year as the letters 'Z' through 'A' plus 1970, where 'Z' represents 1, and 'A' is 26.  Days that would otherwise have only one digit are preceded by a zero.  Write a program that codes and/or decodes an expiration date.  A menu should contain three options for the user: 1) Code 2) Decode 3) Quit.
 
 **Statements Required**:  input, output, loop control, decision making, class
 
@@ -66,4 +66,6 @@ Sample Output:
 	1) Encode Date
 	2) Decode Date
 	Select an option 0
+
+Special thanks to Joe Zaengle for letting me use his material to start with.
 
